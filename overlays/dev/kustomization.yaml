@@ -8,7 +8,9 @@ patches:
 
 images:
 - name: 180287136233.dkr.ecr.us-west-2.amazonaws.com/skiapp
-  newTag: main-7b9df114-95
+  newName: 180287136233.dkr.ecr.us-west-2.amazonaws.com/skiapp
+  newTag: main-f7f11ab0-118
 resources:
 - ../../base
-
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
