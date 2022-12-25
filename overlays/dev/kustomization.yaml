@@ -7,8 +7,7 @@ patches:
     version: v1
 
 images:
-- name: skiapp
-  newName: 180287136233.dkr.ecr.us-west-2.amazonaws.com/skiapp
+- name: 180287136233.dkr.ecr.us-west-2.amazonaws.com/skiapp
   newTag: main-7b9df114-95
 resources:
 - ../../base
