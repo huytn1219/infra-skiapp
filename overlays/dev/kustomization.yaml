@@ -12,5 +12,4 @@ images:
   newTag: main-7b9df114-95
 resources:
 - ../../base
-apiVersion: kustomize.config.k8s.io/v1beta1
-kind: Kustomization
+
