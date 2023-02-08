@@ -9,7 +9,7 @@ patches:
 images:
 - name: 180287136233.dkr.ecr.us-west-2.amazonaws.com/skiapp
   newName: 180287136233.dkr.ecr.us-west-2.amazonaws.com/skiapp
-  newTag: develop-b5150a26-384
+  newTag: develop-b5150a26-385
 resources:
 - ../../base
 apiVersion: kustomize.config.k8s.io/v1beta1
