@@ -1,0 +1,16 @@
+patches:
+- path: ingress_patch.yaml
+  target:
+    group: networking.k8s.io
+    kind: Ingress
+    name: skiapp-ingress
+    version: v1
+
+images:
+- name: 180287136233.dkr.ecr.us-west-2.amazonaws.com/skiapp
+  newName: 180287136233.dkr.ecr.us-west-2.amazonaws.com/skiapp
+  newTag: develop-9f221e61-410
+resources:
+- ../../base
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
