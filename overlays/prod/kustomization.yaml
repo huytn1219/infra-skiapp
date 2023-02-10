@@ -5,7 +5,7 @@ patches:
     kind: Ingress
     name: skiapp-ingress
     version: v1
-
+namespace: skiapp
 images:
 - name: 180287136233.dkr.ecr.us-west-2.amazonaws.com/skiapp
   newName: 180287136233.dkr.ecr.us-west-2.amazonaws.com/skiapp
