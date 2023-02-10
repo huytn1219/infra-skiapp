@@ -9,7 +9,7 @@ namespace: team-riker
 images:
 - name: 180287136233.dkr.ecr.us-west-2.amazonaws.com/skiapp
   newName: 180287136233.dkr.ecr.us-west-2.amazonaws.com/skiapp
-  newTag: develop-883a34b2-424
+  newTag: develop-c127f631-426
 resources:
 - ../../base
 apiVersion: kustomize.config.k8s.io/v1beta1
