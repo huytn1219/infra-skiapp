@@ -11,11 +11,9 @@ phases:
       - git pull origin main
   build:
     commands:
-      - |
-        if [[ "${GIT_BRANCH}" == "main" ]]; then
-          cd overlays/dev/
-          kustomize edit set image 180287136233.dkr.ecr.us-west-2.amazonaws.com/skiapp=180287136233.dkr.ecr.us-west-2.amazonaws.com/skiapp:$IMAGE_TAG
-          cat kustomization.yaml
+      - cd overlays/dev/
+      - kustomize edit set image 180287136233.dkr.ecr.us-west-2.amazonaws.com/skiapp=180287136233.dkr.ecr.us-west-2.amazonaws.com/skiapp:$IMAGE_TAG
+      - cat kustomization.yaml
   post_build:
     commands:
       - git add kustomization.yaml && git commit -m "Update Image Tag"
