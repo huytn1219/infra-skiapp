@@ -8,7 +8,8 @@ patches:
 namespace: team-riker
 images:
 - name: 180287136233.dkr.ecr.us-west-2.amazonaws.com/skiapp
-  newName: 180287136233.dkr.ecr.us-west-2.amazonaws.com/skiapp:$IMAGE_TAG
+  newName: 180287136233.dkr.ecr.us-west-2.amazonaws.com/skiapp
+  newTag: dev-66dc4f59-24
 resources:
 - ../../base
 apiVersion: kustomize.config.k8s.io/v1beta1
